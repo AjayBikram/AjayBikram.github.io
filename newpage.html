@@ -1,45 +1,37 @@
 <head>
-
-    <title> Layout Demo</title>
-    </head>
-    <body style="
-    background-image: url('wood.jpeg');
-    background-repeat:repeat;
-    ">
+<title> Layout Demo </title>
+<link rel="stylesheet" href="style.css">
+</head>
+    <body>
    >
-        <table style="width:100%;">
-            <tr>
+        <table>
+            <tr class = "onerow">
                 <td colspan="3">
-                    <h1 style ="color:aliceblue; font-family: 'Times New Roman', Times, serif;"> About Tables</h1>
+                    <h1> About Tables</h1>
                 </td>
             </tr>
-            <tr>
-                <td>
+            <tr class = "tworow">
+                <td class = "data">
                     <ul>
-                        <li><a href="index.html" style="color:rgb(255, 255, 255);"><span style="border:solid 1px gray;
-                            border-radius: 10px;">
-                            Go to Home Page!
-                            </span></a></li>
+                        <li><button><a href="index.html" style="color:rgb(255, 255, 255);"> Go to Home Page!</button>
+                           
+                            </a></li>
                     </ul>
                 </td>
-                <td style=" background-color:#489fe6 ;font-family: 'Sofia', sans-serif,">
-                 
-                    <h2 style = "  
-                        color: white;
-                         text-shadow: 4px 4px 8px #000000;
-                        ">Take a look at the table here</h2>
+                <td>
+                 <h2 id = "shadow">Take a look at the table here</h2>
                     
                     <div style="background-color:#00eaff;">   
-                    <table>
+                    <table class = "table2">
                         <thead>
                         
                         <tr><th>Name</th><th>Age</th><th>Grade</th></tr>
                         </thead>
-                        <tbody>
-                        <tr><td>Mac</td><td>16</td><td>99%</td></tr>
-                        <tr><td>Janet</td><td>75</td><td>85%</td></tr>
-                        <tr><td>Davon</td><td>40</td><td>78%</td></tr>
-                        <tr><td>Earl</td><td>20</td><td>20%</td></tr>
+                        <tbody class ="boddy"> 
+                        <tr><td class = "data" ok = "1unique">Mac</td><td>16</td><td>99%</td></tr>
+                        <tr><td class = "data" ok = "unique">Janet</td><td>75</td><td>85%</td></tr>
+                        <tr><td class = "data" ok = "unique">Davon</td><td>40</td><td>78%</td></tr>
+                        <tr><td class = "data" ok = "unique">Earl</td><td>20</td><td>20%</td></tr>
                         </tbody>
                        </table>
                     </div>
@@ -63,7 +55,7 @@
             
             </tr>
             <tr>
-                <td colspan="3" style="background-color:#acb3b9; text-align:center;">
+                <td colspan="3" class = "data">
                     <p> <a href="https://images.google.com/">If you'd like to look at some images</a></p>
                     <div style="background-image:
                     linear-gradient(red, green, blue);"> 

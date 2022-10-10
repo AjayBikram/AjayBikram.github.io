@@ -1,0 +1,23 @@
+* {border: solid 1px gray}
+thead{background-color: rgb(230, 233, 34);} 
+ .table2{background-color: rgb(226, 145, 39); text-decoration-color: beige;}
+ #shadow{text-shadow: 4px 4px 8px #000000; color: rgb(13, 252, 105);}
+ .data{background-color:#489fe6 ;font-family: 'Sofia', sans-serif,}
+[ok] {text-shadow: 4px 4px 8px #000000;}
+[ok = "unique"]{ color: rgb(231, 190, 190);}
+.onerow.tworow {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: azure ;}
+.tbody > tr {border:solid 1px #00eaff;}
+tr:nth-child(odd) { background: lightblue; }
+.data:not([ok = "unique"]){background: red;}
+button {
+background-color: #ccc;
+border: solid 1px gray;
+border-radius: 5px;
+padding: 5px;
+}
+button:hover {
+background-color:slategray;
+color:white;
+cursor: pointer;
+}
+button:active {background-color:rgb(95, 11, 250)}
