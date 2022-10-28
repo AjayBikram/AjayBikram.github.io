@@ -1,0 +1,13 @@
+img { max-width: 200px; max-height: 200px; }
+table { width: 90%; }
+
+@media screen and (max-width: 600px) {
+   
+    .topnav > div { display: block; text-align: center; }
+   }
+
+   @media screen and (max-width: 600px) {
+  
+    * { flex-direction: column; }
+   }
+   
