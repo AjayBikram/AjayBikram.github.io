@@ -1,7 +1,0 @@
-@media screen and (min-width: 800px) {
-    img { max-width: 500px; max-height: 300px; }
-    table { width: 800px; }
-   }
-
-   .topnav { display: inline-block; }
-   .navbar { display: flex; }
