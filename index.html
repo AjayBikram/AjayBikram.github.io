@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>NIKE</title>
+</head>
+<body>
 
-    <title>Responsive Design</title>
-  </head>
-  <body>
-    <i class="material-icons">cloud</i>
+
+  <header>
     <nav>
-      <div class="logos-section">
-        <h2 class="logo">Happy</h2>
-        
+      <div class="container">
+        <div>
+          <img src="./nike.png" alt="Logo" class="logo" />
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">New Releases</a>
+            </li>
+            <li>
+              <a href="#">Men</a>
+            </li>
+            <li>
+              <a href="#">Women</a>
+            </li>
+            <li>
+              <a href="#">Kids</a>
+            </li>
+            <li>
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+          <form>
+            <div class="search-icon"><i class="fas fas fa-search"></i></div>
+            <input type="text" class="search" placeholder="Looking for something..." />
+            <button class="nav-btn"><i class="fas fa-cart-plus"></i></button>
+          </form>
+        </div>
+        </div> 
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-      <ul class="btns">
-        <li>Login</li>
-        <li>Register</li>
-      </ul>
-      <p class="mobile-nav">:)</p>
     </nav>
-    <main>
-      <section id="text-side">
-        <h1>A <br />Happy man</h1>
-        <p>
-          <h2>Demonstration of a responsive website.
-        </p>
-        <button>Learn more</button>
-      
-      </section>
-      <section id="img-side">
-        <img
-          class="desktop-img"
-          src="./Happy.jpg"
-        />
-        <img
-          class="mobile-img"
-          src="./Happy.jpg"
-        />
-      </section>
-    </main>
-  </body>
+
+    <div class="body">
+      <div>
+        <h4>$180</h4>
+        <h1>Nike Jordan 1 'Chicago'</h1>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>The iconic colorway features a white leather upper and white nylon tongue, with red leather overlays sans the Swoosh and ankle collar appearing in black. The tongue tag is seen in red with white Nike branding with a white midsole and red outsole finishing off the sneaker.</p>
+        <a href="" class="btn">Add To Cart</a>
+      </div>
+      <div>
+        <img src="./chicago.png" alt="Nike Jordan 1 Chicago">
+      </div>
+     
+
+    <div class="footer">
+      <div class="social">
+        <a href="https://www.facebook.com/nike"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/nike"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/nike"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="watch">
+        <div class="play-icon" >
+          <i class="fas fas fa-play" ></i>
+        </div>
+         <h3> Watch a video review.</h3>
+      </div>
+    </div>
+  </header>
+
+  <script src="app.js"></script>
+
+</body>
 </html>

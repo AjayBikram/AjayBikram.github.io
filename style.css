@@ -1,155 +1,318 @@
-* {
-    font-family: "Epilogue", sans-serif;
-    font-size: 1.3rem;
-  }
-  
-  .logo {
-    font-size: 1.3rem;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  nav{
-    display: flex;
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #333;
   }
   
   nav {
-    margin: 0 1.5rem 1.5rem 1.5rem;
-    justify-content: space-between;
+    color: #fff;
+    z-index: 99;
+    position: relative;
   }
   
-  .mobile-nav {
-      display: none;
+  nav a, header a {
+    color: #fff;
+    text-decoration: none;
   }
   
-  .logos-section {
-    display: flex;
+  nav .container {
+    max-width: 1150px;
+    padding: 1em 2em;
+    margin: 0 auto;
   }
   
-  
-  .btns li {
-    font-size: 0.7rem;
-    margin-right: 1rem;
-    color: hsl(0, 0%, 41%);
-  }
-  
-  .btns li:nth-last-child(1) {
-    border: 1px solid gray;
-    padding: 0.2rem 0.7rem;
-    border-radius: 0.3rem;
-  }
-  
-  
-  
-  main {
+  nav .container > div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 70vh;
+    grid-template-columns: 1fr 6fr;
     align-items: center;
-    justify-content: center;
-    margin-left: 8rem;
   }
-  .desktop-img {
-    display: block;
+  
+  nav .menu,
+  nav form,
+  .footer,
+  .footer .watch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .mobile-img {
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+  
+  nav ul a {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  
+  nav form {
+    margin-right: 2em;
+  }
+  
+  nav form input {
+    background: transparent;
+    color: #fff;
+    width: 12em;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+  }
+  
+  nav form input::placeholder {
+    color: #fff;
+  }
+  
+  .logo {
+    width: 4em;
+    display: inline-block;
+  }
+  
+  .nav-btn {
+    background: rgba(
+      255, 255, 255, 0.3
+    );
+    color: #fff;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+  }
+  
+  .nav-btn:hover {
+    background: rgba(
+      255, 255, 255, 0.6
+    );
+  }
+  nav .container .menu-btn {
     display: none;
   }
   
-  main h1 {
-    font-size: 3rem;
-  }
-  
-  main p {
-    font-size: 0.7rem;
-    width: 18rem;
-    color: hsl(0, 0%, 41%);
-    line-height: 0.9rem;
-  }
-  
-  main button {
-    background-color: hsl(0, 0%, 8%);
+  header {
+    height: 100vh;
+    background: #090909;
+    position: relative;
+    overflow: hidden;
     color: #fff;
-    border: none;
-    font-size: 0.7rem;
-    padding: 0.6rem 1rem;
-    border-radius: 0.4rem;
-    margin-top: 1rem;
   }
   
-  #text-side {
-    margin-top: 3rem;
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50em;
+    background: linear-gradient(
+      45deg ,#fc3e3e, #d2183a
+    );
+    width: 100%;
+    height: 120%;
+    transform: rotate(20deg);
+    z-index: 0;
   }
   
-  #img-side img {
-    width: 20rem;
+  header::after {
+    content: 'JORDAN CHICAGO';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 17em;
+    font-weight: 700;
+    z-index: 0;
   }
   
-  .attribution {
-    font-size: 0.7rem;
+  .body {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2em;
+    height: 80%;
+    position: relative;
+    z-index: 1;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  
+  .body h1 {
+    font-size: 3.5em;
+    margin: 0.5em 0;
+  }
+  
+  .body h4 {
+   font-size: 1.5em;
+   margin: 0.5em 0;
+  }
+  
+  .body p {
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 0.9em;
+    margin: 2em 0 3em 0;
+    max-width: 45em;
+  }
+  
+  .btn {
+    padding: 0.7em 1.5em;
+    background: #db3a09;
+    border-radius: 3em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #db3d0c;
+  }
+  .rating:hover{
+    cursor: pointer;
+  }
+  .body > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .body .fas {
+    color: #fcc204;
+  }
+  
+  .body img {
+    width: 45em;
+    transform: rotate(-25deg);
+    filter: drop-shadow(
+      30px 45px 40px #161616
+    );
+  }
+  
+  .footer {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 3em;
+    position: relative;
+  }
+  
+  .footer a {
+    margin: 0 0.4em;
+    font-size: 1.2em;
+  }
+  
+  .footer .play-icon {
+    border: 3px rgb(255, 149, 0) solid;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
     text-align: center;
-    margin-top: 5.5rem;
+    line-height: 3em;
+    font-size: 1.3em;
+    box-shadow: 0px 0px 15px #fff;
+    margin-right: 0.8em;
+    transition: 0.3s;
+    cursor: pointer;
   }
   
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-    font-size: 0.7rem;
+  .footer .play-icon:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 0px transparent;
   }
   
-  /* Responsive */
-  @media (min-width: 300px) and (max-width: 480px) {
-    * {
-      font-size: 1rem;
+  @media screen and (max-width: 1000px) {
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
-  
-    body {
-      height: 100vh;
-      width: 100vw;
-      overflow-y: hidden;
-      overflow-x: hidden;
+    nav .container > div {
+      grid-template-columns: 1fr;
     }
+    nav .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 0;
+      overflow: hidden;
+      transition: 0.7s;
+    }
+    nav ul li {
+      display: block;
+      margin: 0.5em 0;
+    }
+    nav ul li:nth-child(1) {
+      margin-top: 1.5em;
+    }
+    nav .container .menu-btn {
+      display: inline-block;
+      font-size: 1.4em;
+      cursor: pointer;
+    }
+    nav .container .nav-toggle {
+      height: 16em;
+    }
+  }
   
+  @media screen and (max-width: 1210px) {
     nav {
-      margin: 0 1.5rem 0 1.5rem;
+      margin-bottom: 2em;
     }
-  
-    nav ul {
-      display: none;
-    }
-    
-    .mobile-nav {
-      display: block;
-      margin-right: 2rem;
-    }
-  
-    main {
-      display: grid;
-      grid-template-columns: 100%;
-      margin: -3rem auto 0 auto;
-    }
-  
-    
-    .desktop-img {
-      display: none;
-    }
-    .mobile-img {
-      display: block;
-      margin-top: 3rem;
-    }
-  
-    
-    main h1 {
-      font-size: 2.5rem;
-    }
-  
-   
-  
-    .attribution {
-      width: 13rem;
-      margin: 10rem auto 0 auto;
+    .body {
+      grid-template-columns: 1fr;
       text-align: center;
+    }
+    header::before {
+      display: none;
+    }
+    header {
+      height: initial;
+    }
+    .body > div:nth-child(2) {
+      justify-content: center;
+      margin: 3em 0;
+    }
+    .body img {
+      transform: none;
+    }
+    .body p {
+      margin: 2em auto 3em auto;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+    .body img {
+      width: 90%;
+    }
+    .footer {
+      flex-direction: column;
+      margin-top: 3em;
+    }
+    .watch {
+      margin: 2em 0;
+      flex-direction: column;
+    }
+    .footer .play-icon {
+      margin: 0;
+    }
+  }
+  
+  @media screen and (max-height: 650px) {
+    header {
+      height: initial;
+    }
+    .footer {
+      margin: 4em auto 2em auto;
     }
   }

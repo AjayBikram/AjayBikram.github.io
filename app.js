@@ -1,137 +1,15 @@
-const wrapper = document.querySelector(".sliderWrapper");
-const menuItems = document.querySelectorAll(".menuItem");
+const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-btn");
 
-const products = [
-  {
-    id: 1,
-    title: "Air Force",
-    price: 119,
-    colors: [
-      {
-        code: "black",
-        img: "./air.png",
-      },
-      {
-        code: "darkblue",
-        img: "./air2.png",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Air Jordan",
-    price: 149,
-    colors: [
-      {
-        code: "lightgray",
-        img: "./jordan.png",
-      },
-      {
-        code: "green",
-        img: "./jordan2.png",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Blazer",
-    price: 109,
-    colors: [
-      {
-        code: "lightgray",
-        img: "./blazer.png",
-      },
-      {
-        code: "green",
-        img: "./blazer2.png",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Crater",
-    price: 129,
-    colors: [
-      {
-        code: "black",
-        img: "./crater.png",
-      },
-      {
-        code: "lightgray",
-        img: "./crater2.png",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Hippie",
-    price: 99,
-    colors: [
-      {
-        code: "gray",
-        img: "./hippie.png",
-      },
-      {
-        code: "black",
-        img: "./hippie2.png",
-      },
-    ],
-  },
-];
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle('nav-toggle');
+ });
 
-let choosenProduct = products[0];
-
-const currentProductImg = document.querySelector(".productImg");
-const currentProductTitle = document.querySelector(".productTitle");
-const currentProductPrice = document.querySelector(".productPrice");
-const currentProductColors = document.querySelectorAll(".color");
-const currentProductSizes = document.querySelectorAll(".size");
-
-menuItems.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    //change the current slide
-    wrapper.style.transform = `translateX(${-100 * index}vw)`;
-
-    //change the choosen product
-    choosenProduct = products[index];
-
-    //change texts of currentProduct
-    currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = "$" + choosenProduct.price;
-    currentProductImg.src = choosenProduct.colors[0].img;
-
-    //assing new colors
-    currentProductColors.forEach((color, index) => {
-      color.style.backgroundColor = choosenProduct.colors[index].code;
-    });
-  });
+ const watch = document.querySelector(".watch");
+ watch.addEventListener("click", () => {
+    window.open("https://www.youtube.com/watch?v=dntmuB6kw_A");
 });
-
-currentProductColors.forEach((color, index) => {
-  color.addEventListener("click", () => {
-    currentProductImg.src = choosenProduct.colors[index].img;
-  });
-});
-
-currentProductSizes.forEach((size, index) => {
-  size.addEventListener("click", () => {
-    currentProductSizes.forEach((size) => {
-      size.style.backgroundColor = "white";
-      size.style.color = "black";
-    });
-    size.style.backgroundColor = "black";
-    size.style.color = "white";
-  });
-});
-
-const productButton = document.querySelector(".productButton");
-const payment = document.querySelector(".payment");
-const close = document.querySelector(".close");
-
-productButton.addEventListener("click", () => {
-  payment.style.display = "flex";
-});
-
-close.addEventListener("click", () => {
-  payment.style.display = "none";
+const rating = document.querySelector(".rating");
+ rating.addEventListener("click", () => {
+    window.open("https://www.google.com/shopping/product/9424516302856189969/reviews?q=review+on+jordan+1s&oq=review+on+jordan+1s&aqs=chrome..69i57j33i160.5628j0j4&sourceid=chrome&ie=UTF-8&sa=X&ved=2ahUKEwjB7v3jovT7AhUdoXIEHT5HCLYQ4jV6BAgEECk");
 });
