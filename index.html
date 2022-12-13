@@ -114,8 +114,39 @@
          <h3> Watch a video review.</h3>
       </div>
     </div>
+    
   </header>
- 
+  <div id="demo-modal" class="modal" role="dialog" tabindex="-1">
+    <div class="model-inner">
+      <div class="modal-header">
+        <h3>Payment Information</h3>
+        <button class="modal-close" data-id="demo-modal" aria-label="Close">
+          &times;
+        </button>
+      </div>
+      <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="Your name" class="payInput">
+            <br>
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 203 518" class="payInput">
+            <br>
+            <label>Address</label>
+            <input type="text" placeholder="11 Ryerson AVe" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./visa.png" width="40" alt="" class="cardIcon">
+                <img src="./mastercard.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+    </div>
+  </div>
+
   <script src="app.js"></script>
   
 </body>
