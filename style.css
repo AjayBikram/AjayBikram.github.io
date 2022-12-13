@@ -120,7 +120,41 @@ body {
     transform: rotate(20deg);
     z-index: 0;
   }
-  
+  .modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .modal[open] {
+    display: flex;
+  }
+  .model-inner {
+    background-color: white;
+    border-radius: 0.5em;
+    max-width: 600px;
+    padding: 2em;
+    margin: auto;
+  }
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  }
+  #modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: black;
+    opacity: 0.5;  
+  }
   header::after {
     content: 'JORDAN CHICAGO';
     position: absolute;
@@ -173,7 +207,17 @@ body {
     font-size: 1em;
     transition: 0.3s;
   }
-  
+  .modal-open{
+    padding: 0.7em 1.5em;
+    background: #db3a09;
+    border-radius: 3em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+  .modal-open:hover{
+    cursor: pointer;
+  }
   .btn:hover {
     background: #db3d0c;
   }
